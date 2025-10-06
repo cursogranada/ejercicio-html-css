@@ -1,0 +1,139 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header y Navegación */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+
+.perfil-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.perfil-info img {
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    width: 150px;
+    height: auto;
+}
+
+aside h3 {
+    margin-bottom: 0.5rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+/* Proyectos */
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proyecto-tarjeta {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.proyecto-tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Sección de Contacto */
+#contacto a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Media Queries (Diseño Responsivo) */
+@media (max-width: 768px) {
+    .perfil-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
